@@ -1,0 +1,152 @@
+
+
+
+
+.logo-help{
+    width:120px;
+    vertical-align: top;
+    margin-left:50px;
+    padding-top:0px;
+
+   
+}
+
+.fas fa-bar{
+margin-left:50px;
+    size:500px;
+}
+.options{
+margin-left:12px;
+
+
+}
+.option-text{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:20px;
+    margin-left:17px;
+}
+.icon{
+    width:15px;
+
+}
+
+.left-section{
+    width:224px;
+    height:873px;
+    display:inline-block;
+    padding-top:23px;
+    margin-left:20px;
+   vertical-align: top;
+}
+
+.first,.second,.third{
+    display:inline-block;
+    align-content: top;
+    width:359px;
+    margin-right:16px;
+    vertical-align: top;
+    
+    height:350px;
+    
+    }
+.vid-genre-section{
+   width:1000px;
+   display:inline-block;
+
+}
+.vid{
+   margin-left:40px;
+   width:1600px;
+   overflow:wrap;
+   text-align: left;
+}
+.genre{
+    user-select:none;
+    padding-bottom:0px;
+    white-space: nowrap;
+    overflow:auto;
+    display:inline-block;
+    text-align: center;
+   
+}
+
+.genre-select{
+    display:inline-block;
+    padding-right:15px;
+    padding-left:15px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-radius:10px;
+    background:rgba(0,0,0,0.05);
+    margin-right:8px;
+}
+.first:hover,.second:hover{
+    cursor:pointer;
+}
+
+
+.thumbnail-playlist:hover{
+    filter:brightness(30%)
+}
+.thumbnail-playlist{
+width:359px;
+height:202px;
+border-radius:20px;
+}
+.text-pfp{
+    display:grid;
+    grid-template-columns: 36px 1fr;
+}
+.pfp{
+    margin-right:0px;
+    display:inline-block;
+   
+}
+
+    
+.profile-pic{
+    border-radius:50px;
+    width:36px;
+    margin-bottom:20px;
+    margin-right:10px;
+    
+    
+}
+.video-title{
+    display: inline-block;
+    font-size:16px;
+    font-weight:500;
+    text-align: left;
+    text-align: top;
+    vertical-align: top;
+    line-height: 1.5;
+    width: 220px;}
+.vid-title{
+    font-size:14px;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+}
+
+
+
+.creator{
+    font-size:12px;
+    margin-top:2px;
+    font-weight:500;
+    text-decoration-thickness: auto;
+}
+.details{
+    margin-top:10px;
+    font-size:12px;
+    text-align: left;
+    text-align: top;
+}
+
+
+
+
+
+.details, .video-title{
+    font-family: 'Roboto', sans-serif;
+}

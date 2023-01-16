@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+   var div=document.getElementById(button);
+   img=document.createElement(img);
+   var a =1;
+   
+   if(a===1){
+    img.src="black.png";}
+    else{
+      img.src="m.jpg";
+      a=1;
+    }
+    div.appendChild(img);
+    
+    
+    
+    </script>
+  <link rel="stylesheet" href="newpractice.css">
+    <title>cards game</title>
+    <style>
+      body{
+        background-color: black;
+        color: white;
+      }
+      .allcards{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;}
+      
+      .card{
+        margin-top:20px;
+        margin-left: 20px;
+        width: 207.87px;
+        height: 207.87px;
+        background-color: rgba(255, 255,255,0.15);
+        
+        
+      }
+      .class  {
+        width: 100%;
+        height: 100%;
+        display:block;
+      }
+      .button {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0, 0, 0.15);
+      
+      }
+    </style>
+</head>
+
+<body>
+  <div class="points">THE NUMBER OF CARDS YOU GET RIGHT MORE THE POINT WILL BE</div>
+   <div class="allcards">
+
+     <div class="first card" id="first-card"><button class="button" id="button" onclick=get()></button></div>
+     <div class="second card"><button class="button" id="button1" onclick=get()></button></div>
+    </div>
+
+   
+
+
+
+
+
+
+</body>
+</html>

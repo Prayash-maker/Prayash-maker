@@ -1,0 +1,51 @@
+<head>
+
+</head>
+<body>
+   <input type="date" id="the-date">
+   <input tpye="text" id="thetodo">
+    <button onclick="addtodo()"> addtodo</button>
+    <button>hello</button>
+    <div>bitchass</div>
+    
+    
+    <div class="bitch">
+
+      bitch
+
+    </div>
+    <script>
+    
+       
+       
+    const todos=[{title:"pppoopoo",
+    thedate: "undefined"},
+    {title:"guuguugga",thedate: "undefined"},
+    {title:"nununana",thedate: "undefined"}];
+       
+        
+   todos.forEach(function(titlen){
+      const print=document.createElement("div");
+      print.innerText=titlen.title +" " +titlen.thedate;
+      document.body.appendChild(print);
+   });
+   function addtodo(){
+printingvariable=document.getElementById("thetodo");
+date=document.getElementById("the-date");
+todos.push({title:printingvariable.value,thedate:date.value});
+render();
+ };
+ function render(){
+   
+    
+      const title=document.createElement("div");
+      title.innerText=printingvariable.value,date.value;
+      document.body.appendChild(title);
+      
+    
+      };
+    
+
+
+</script>
+</body>

@@ -1,0 +1,11 @@
+.topheader{
+    text-align: center;
+justify-content: center;
+ 
+margin-bottom:0px;  }
+
+.text{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color:rgb(145 145, 203);
+}

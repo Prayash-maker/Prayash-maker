@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>
+            iphone
+        </title>
+    <link rel="stylesheet" href="iphone.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="result" ><span id="result">0</span></div>
+            <div class="buttons">
+            <button class="button top" onclick= "AC()" >AC</button>
+            <button class="button top" onclick="sign()">+/-</button>
+            <button class="button top">%</button>
+           <button class="button operation">/</button>
+           <button class="button number" onclick="get(7)">7</button>
+            <button class="button number" onclick="get(8)">8</button>
+           
+           <button class="button number" onclick="get(9)">9</button>
+           <button class="button operation" onclick="multiply()">*</button>
+            <button class="button number" onclick="get(4)">4</button>
+            <button class="button number" onclick="get(5)">5</button>
+            <button class="button number" onclick="get(6)">6</button>
+           <button class="button operation">-</button>
+           <button class="button number" onclick="get(1)" id="number1">1</button>
+           <button class="button number" onclick="get(2)">2</button>
+            <button class="button number" onclick="get(3)">3</button>
+            <button class="button operation" onclick="add()">+</button>
+           
+            
+                <button class="button zero" onclick="get(0)">0</button>
+                 <button class="button number">.</button>
+                <button class="button operation" onclick="perform()">=</button>
+           
+         
+        </div>
+     </div>
+     <script>
+    let variable="";
+    let global="";
+    let first_value=0;
+    
+    let operation=""
+    let adding_variable="";
+        function get(n){
+        let us=n.toString();
+       adding_variable=document.getElementById("result");
+            adding_variable.innerHTML=global+n.toString();
+         global=global + n.toString();
+        }
+      function AC(){
+        document.getElementById("result").innerHTML=0;
+        global="";
+         variable="";
+        global="";
+         first_value=0;
+        
+         operation=""
+         adding_variable="";
+      }
+      function add(){
+     
+        first_value=parseInt(global);
+        global="";
+        operation="+";
+        document.getElementById("result").innerHTML=0;
+    }
+    function multiply(){
+        first_value=parseInt(global);
+        global="";
+        operation="*";
+        document.getElementById("result").innerHTML=0;
+    }
+      function perform(){
+       if(operation==="+"){
+        document.getElementById("result").innerHTML=first_value+parseInt(global);
+       
+       }
+       else if(operation==="*"){
+        document.getElementById("result").innerHTML=first_value*parseInt(global);
+        
+       }
+      global=first_value+parseInt(global);
+      first_value=0;
+      }
+      function sign(){
+        let newvar=parseInt(global)*-1;
+        global=newvar.toString();
+            adding_variable.innerHTML=newvar.toString();
+      }
+
+
+</script>
+        
+    </body>
+</html>
